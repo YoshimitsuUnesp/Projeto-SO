@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "proccess.h"
 
 void limparTela(){
     #ifdef _WIN32
@@ -34,10 +35,16 @@ void menuPrincipal()
             exit(0);
             break;
         case 1:
+            printf("\nOPCAO 1 ESCOLHIDA.\n\n");
+            iniciaProcesso();
             break;
         case 2:
+            printf("\nOPCAO 2 ESCOLHIDA.\n\n");
+            processosEmExecucao();
             break;
         case 3:
+            printf("\nOPCAO 1 ESCOLHIDA.\n\n");
+            ocupacaoDeMemoria();
             break;
         default:
             printf("\nERRO: OPCAO INVALIDA!\n\n");
